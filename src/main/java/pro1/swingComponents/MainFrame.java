@@ -38,6 +38,9 @@ public class MainFrame extends JFrame {
         slider.setMajorTickSpacing(1);
         slider.setPaintTicks(true);
         slider.setPaintLabels(true);
+        slider.addChangeListener(e -> {
+            displayPanel.changeThickness(slider.getValue()); // globaly change the thickness of all drawables
+        });
         leftPanel.add(slider);
 
         // Checkbox

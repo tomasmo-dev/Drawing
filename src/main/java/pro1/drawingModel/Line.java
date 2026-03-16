@@ -5,7 +5,7 @@ import java.awt.*;
 public class Line extends XY {
     private int endX;
     private int endY;
-    private int thickness;
+    public int thickness;
     private String color;
 
     public boolean textVisible;

@@ -33,6 +33,14 @@ public class DisplayPanel extends JPanel {
         this.repaint();
     }
 
+    public void changeThickness(int newThickness)
+    {
+        for (Line l : drawables) {
+            l.thickness = newThickness;
+        }
+        this.repaint();
+    }
+
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
