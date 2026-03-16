@@ -42,6 +42,7 @@ public class MainFrame extends JFrame {
 
         // Checkbox
         checkBox = new JCheckBox("Hide Text");
+        checkBox.setSelected(true);
         checkBox.addActionListener(e -> {
            displayPanel.toggleHideText();
         });

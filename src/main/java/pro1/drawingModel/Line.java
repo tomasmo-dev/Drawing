@@ -19,10 +19,10 @@ public class Line extends XY {
         this.thickness = thickness;
         this.endX = endX;
         this.endY = endY;
-        this.textVisible = false;
+        this.textVisible = true;
 
-        // offset the text a bit
-        this.lengthText = new Text((x + endX) / 2, (y + endY) / 2 - 10, String.valueOf(Length));
+        // place the label near the last point of the segment
+        this.lengthText = new Text(endX + 6, endY - 6, String.valueOf(Length));
     }
 
     @Override
